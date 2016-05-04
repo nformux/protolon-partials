@@ -1,0 +1,6 @@
+{
+  "name": "Prototype",
+  "tagline": "",
+  "body": "### How to Start a Prototype\r\n\r\n1. Install [Node](https://nodejs.org/en/)\r\n2. Open PowerShell (Windows) or Terminal (Mac)\r\n3. Install Harp\r\n`npm install -g harp`\r\n4. Setup a new prototype project\r\n`harp init my-project-name -b nformux/prototype-boilerplate`",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
