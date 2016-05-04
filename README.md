@@ -1,3 +1,3 @@
-# iomer/nForm Prototype Partials
+# Protolon Partials
 
 A collection of pre-built partials for quickly creating prototypes.
