@@ -1,0 +1,45 @@
+// Off-Canvas Mobile Nav
+// Written by Ben Franck
+//
+// If you encounter any issues, please email me at benjamin.franck@gmail.com
+
+if nav
+  #mobile-nav.list-group
+    
+    // First level of nav
+    each item, index in nav
+      if item.subnav
+        a.list-group-item(href=item.href data-toggle="collapse" data-target="#subnav-" + index )
+          .pull-right
+            .glyphicon.glyphicon-chevron-down
+          span= item.label
+        .collapse(id="subnav-"+index)
+          
+          // Second level of nav
+          each subitem in item.subnav
+            if subitem.subnav
+              a.list-group-item(href=subitem.href data-toggle="collapse" data-target="#sub2nav-" + index )
+                .pull-right
+                  .glyphicon.glyphicon-chevron-down
+                span= subitem.label
+              .collapse(id="sub2nav-"+index)
+                
+                // Third level of nav
+                each sub2item in subitem.subnav
+                  a.list-group-item(href=sub2item.href)= sub2item.label
+
+            else
+              a.list-group-item(href=subitem.href)= subitem.label
+      else
+        a.list-group-item(href=item.href)= item.label
+
+else
+  p
+    strong Error! 
+    span No data found for the mobile-nav partial
+
+script.
+  $("[data-toggle='off-canvas']").on("click", function(e){
+      target = $( $(e.target).data('target') );
+      target.toggleClass('in ');
+  });

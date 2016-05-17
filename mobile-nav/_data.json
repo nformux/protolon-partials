@@ -1,0 +1,42 @@
+{
+  "mobile-nav": {
+    "nav": [
+      {
+        "label": "Main 1",
+        "href": "#",
+        "subnav": [
+          {
+            "label": "Sub 1",
+            "href": "#"
+          },
+          {
+            "label": "Sub 2",
+            "href": "#",
+            "subnav": [
+              {
+                "label": "Second Sub 1",
+                "href": "#"
+              },
+              {
+                "label": "Second Sub 2",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "label": "Sub 3",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "label": "Main 2",
+        "href": "#"
+      },
+      {
+        "label": "Main 1",
+        "href": "#"
+      }
+    ]
+  }
+}
