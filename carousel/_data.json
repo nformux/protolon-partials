@@ -1,0 +1,16 @@
+{
+  "carousel": {
+    "slides": [
+      {
+        "title": "Example Slide 1",
+        "image": "http://placehold.it/800x600&title=Slide",
+        "caption": "This is an example description"
+      },
+      {
+        "title": "Example Slide 2",
+        "image": "http://placehold.it/800x600&title=Slide",
+        "caption": "This is another example description"
+      }        
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+if carousel
+  #carousel.carousel.slide(data-ride='carousel')
+
+    // Indicators
+    ol.carousel-indicators
+      each slide, index in slides
+        li(data-target='#carousel', data-slide-to=index)
+  
+    // Wrapper for slides
+    .carousel-inner(role='listbox')
+      each slide, index in slides
+        .item
+          img(src=slide.image, alt=slide.caption)
+          .carousel-caption
+            h4= slide.title
+            p= slide.caption
+              
+    // Controls
+    a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+      |     
+      span.sr-only Previous
+    |   
+    a.right.carousel-control(href='#carousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+      |     
+      span.sr-only Next
